@@ -1,4 +1,4 @@
-X## This function creates a special "matrix", which is actually a list
+## This function creates a special "matrix", which is actually a list
 ## containing 4 functions to: 
 ## 1. Set the value of the matrix
 ## 2. Get the value of the matrix
@@ -17,13 +17,12 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
-## This function calculates the inverse of a INVERTIBLE (or non-singular)
+## This function calculates the inverse of a INVERTIBLE (or NON-singular)
 ## matrix. As specified in the assignment, an invertible matrix is assumed
 ## so I will not include the test to check if a matrix is invertible.
 ## To avoid unnecessary computing, the function first checks to see if
 ## the inverse has already been calculated. If yes, then it retrieves 
 ## the inverse from the cache. Otherwise, it will calculate the inverse.
-
 cacheSolve <- function(x) {
     ## To install the 'MASS' package which contains the ginv
     ## function, which is required to calculate generalised inverse of 
